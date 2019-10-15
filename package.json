@@ -1,0 +1,22 @@
+{
+  "name": "flat-array",
+  "version": "1.0.0",
+  "description": "flattingArray",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatteoTironi/flat-array.git"
+  },
+  "author": "Matteo Tironi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatteoTironi/flat-array/issues"
+  },
+  "homepage": "https://github.com/MatteoTironi/flat-array#readme",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}
