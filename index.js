@@ -1,5 +1,5 @@
-function flatArray() {
-  // your code here...
+function flatArray(arr) {
+  // your code here ...
 }
 
-export default flatArray
+module.exports = flatArray;
