@@ -1,6 +1,6 @@
 const flatArray = require("./index");
 
-describe("Test flatArray funcrtion", () => {
+describe("Test flatArray function", () => {
   it("should return an array", () => {
     expect(Array.isArray(flatArray([1, 2]))).toBe(true);
   });
