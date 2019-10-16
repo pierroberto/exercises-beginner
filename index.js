@@ -22,18 +22,21 @@ Write tests using `Jest`
 
  */
 
-function flatArray(array,res=[]) {
+function flatArray(array, res = []) {
     for (i = 0; i < array.length; i++) {
 
-        //se il valore a quella posizione è un array
+        //il valore a quella posizione è un array?
         if (Array.isArray(array[i])) {
-            res = [...res,...array[i]]
+            //toglie le parentesi ed aggiunge il valore a res
+            res = [...res, ...array[i]]
         }
-        if(!Array.isArray(array[i]))
-        res = [...res,array[i]]
+        if (!Array.isArray(array[i]))
+            res = [...res, array[i]]
     }
     return res;
 }
-flatArray([1,[2],[67,[7]]])
+flatArray([1, [2], [67, [7, [57], 5]]])
+
+//1,2,67,[7 ,[57] ,5]
 
 module.exports = flatArray;
