@@ -1,4 +1,5 @@
-const flatArray = require("./index");
+const {flatArray, sum} = require("./index");
+
 
 describe("Test flatArray function", () => {
   it("should return an array", () => {
@@ -28,3 +29,27 @@ describe("Test flatArray function", () => {
     expect(flatArray(arr2)).toStrictEqual([1, 2, 3, 4, 5, 6, 7, 8, 9]);
   });
 });
+
+describe("Test sum function", () => {
+  it('should return a sum of array', () => {
+    expect(sum([1, 2, 3])).toBe(6);
+    expect(sum([15, 20, 32])).toBe(67);
+    expect(sum([1.5, 2.2, 3.0])).toBe(6.7);
+    expect(sum([-1, 4, 7, -2])).toBe(8);
+  });
+  it("should return 0 if the argument is undefined", () => {
+    expect(sum(undefined)).toBe(0);
+  });
+  it("should return 0 if the argument is null", () => {
+    expect(sum(null)).toStrictEqual(0);
+  });
+  it('should return "error" if array[i] is not a number', () => {
+    expect(sum(["a", "b", "c"])).toBe("error");
+    expect(sum([1, "b", 3])).toBe("error");
+  });
+  it("should return 0 if the argument is a string", () => {
+    expect(sum("hello")).toBe(0);
+  });
+  
+});
+
