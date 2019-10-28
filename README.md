@@ -18,6 +18,19 @@ function sum(arr) {
 sum([1,2,3]])
 ```
 The expected result is: `6`.
+
+# 3. Fibonacci
+
+Write a function which takes a positive number as argument and returns the Fibonacci series into an array.
+Hint: use recursion.
+```
+function fibonacci(n) {
+    // ...
+}
+fibonacci(10)
+```
+The expected result is `0  1  1  2  3  5  8  13  21  34  55`.
+
 ## Setup
 - Fork this repo.
 - `git clone` the repo.
