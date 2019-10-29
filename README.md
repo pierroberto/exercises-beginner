@@ -29,7 +29,7 @@ function fibonacci(n) {
 }
 fibonacci(10)
 ```
-The expected result is `[0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 5]`.
+The expected result is `[0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]`.
 
 ## Setup
 - Fork this repo.

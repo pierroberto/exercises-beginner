@@ -1,4 +1,4 @@
-const {flatArray, sum} = require("./index");
+const {flatArray, sum, fibonacci} = require("./index");
 
 
 describe("Test flatArray function", () => {
@@ -50,6 +50,15 @@ describe("Test sum function", () => {
   it("should return 0 if the argument is a string", () => {
     expect(sum("hello")).toBe(0);
   });
+  
+});
+
+describe("Test fibonacci function", () => {
+  it('should return an array', () => {
+    expect(fibonacci(10)).toStrictEqual([0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]);
+    
+  });
+  
   
 });
 
