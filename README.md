@@ -19,7 +19,7 @@ sum([1,2,3]])
 ```
 The expected result is: `6`.
 
-# 3. Fibonacci
+# 3. Fibonacci (part 1)
 
 Write a function which takes a positive number as argument and returns the Fibonacci series into an array.
 Hint: use recursion.
@@ -30,6 +30,19 @@ function fibonacci(n) {
 fibonacci(10)
 ```
 The expected result is `[0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 5]`.
+
+# 4. Fibonacci (part 2)
+
+Given an array of numbers, write a function which returns an array of numbers containing the list of numbers which belongs to Fibonacci serie. If an empty array is provided an empty array is returned. The array returned has to be sorted in crescent order and should not contain any duplicated value.
+```
+function belongToFibonacci(arr) {
+    // ...
+}
+
+belongToFibonacci([0, 11, 25, 55])
+```
+The expected result is `[0, 55]`
+
 
 ## Setup
 - Fork this repo.
