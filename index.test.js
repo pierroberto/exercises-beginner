@@ -54,11 +54,20 @@ describe("Test sum function", () => {
 });
 
 describe("Test fibonacci function", () => {
-  it('should return an array', () => {
+  it('should return an array length=num', () => {
     expect(fibonacci(10)).toStrictEqual([0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]);
-    
+    expect(fibonacci(1)).toStrictEqual([0, 1]);
+    expect(fibonacci(0)).toStrictEqual([0]);
   });
-  
-  
+  it('should return "error" if num is not a number', () => {
+    expect(fibonacci("abc")).toBe("error");
+    expect(fibonacci( )).toBe("error");
+    expect(fibonacci(undefined)).toBe("error");
+    expect(fibonacci(null)).toBe("error");
+  });
+  it('should return "error" if num < 0', () => {
+    expect(fibonacci(-2)).toBe("error");
+  });
+
 });
 

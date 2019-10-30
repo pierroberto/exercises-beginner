@@ -16,11 +16,27 @@ function sum(arr) {
   return arr[0] + sum(arr.slice(1));
 }
 
+
 function fibonacci(num){
-  let arr=[]
-  for(let i=0; i<=num; i++)
-      return arr[i]= num < 1 ? 0: num<=2 ? 1: fibonacci(num-1)+fibonacci(num-2)
+  let x=[]
+  if(typeof num !== "number"|| num <0){
+    return "error"
+  }
+  else if(num===1){
+   x = [0,1];
+   return x;
+  }
+  else if(num<1){
+    x = [0];
+    return x;
+   }
+  else
+  { x = fibonacci(num-1)
+  x.push(x[x.length-1]+x[x.length-2])
+  return x;
+  }
 }
+
 
 
 module.exports = {flatArray, sum, fibonacci}
